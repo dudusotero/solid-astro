@@ -26,7 +26,7 @@ const defaultState: ContextState = {
 const state = atom<ContextState>(defaultState)
 
 const actions: ContextActions = {
-  clear: () => state.set({ ...state.get(), items: [] }),
+  clear: () => state.set(defaultState),
   addItem: (item: CartItem) => {
     if (state.get().items.find((i) => i.id === item.id)) {
       return actions.increaseQuantity(item.id)

@@ -1,6 +1,9 @@
 ---
+import { useCounter } from '@/contexts/counter'
+
+const [count] = useCounter()
 ---
 
 <h1 class="text-4xl font-bold underline">
-  <slot />
+  <slot /> - {count()}
 </h1>
