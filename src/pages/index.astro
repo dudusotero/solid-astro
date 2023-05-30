@@ -1,12 +1,14 @@
 ---
-import Counter from '../components/Counter'
-import Heading from '../components/Heading.astro'
-import Layout from '../layouts/Layout.astro'
+import Cart from '@/components/Cart'
+import Counter from '@/components/Counter'
+import Heading from '@/components/Heading.astro'
+import Layout from '@/layouts/Layout.astro'
 ---
 
 <Layout title="Astro Project">
   <main class="grid gap-4 p-4">
     <Heading>Hello, Astro!</Heading>
     <Counter client:load />
+    <Cart client:load />
   </main>
 </Layout>
