@@ -16,8 +16,8 @@ const Counter: Component<Props> = (props) => {
   })
 
   return (
-    <div>
-      <h1>{count()}</h1>
+    <div class="grid min-w-[60px] place-content-center gap-4 justify-self-start rounded border-2 p-4">
+      {count()}
     </div>
   )
 }
