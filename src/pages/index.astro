@@ -1,11 +1,12 @@
 ---
-import Card from '../components/Card.astro'
+import Counter from '../components/Counter'
+import Heading from '../components/Heading.astro'
 import Layout from '../layouts/Layout.astro'
 ---
 
 <Layout title="Astro Project">
   <main class="grid gap-4 p-4">
-    <h1 class="text-4xl underline">Home page</h1>
-    <Card body="This is the body of the card" title="Card title" href="/" />
+    <Heading>Hello, Astro!</Heading>
+    <Counter client:visible />
   </main>
 </Layout>
